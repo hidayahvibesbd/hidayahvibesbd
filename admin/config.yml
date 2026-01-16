@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: main # আপনার ব্রাঞ্চের নাম main না হলে সেটি দিন
+  branch: main
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
@@ -10,7 +10,11 @@ collections:
     label: "ইসলামিক পোস্ট"
     folder: "posts"
     create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Category", name: "category", widget: "select", options: ["কুরআন", "হাদিস", "ইসলামিক লেখা", "ভিডিও"]}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Body", name: "body", widget: "markdown"}
+      
       
