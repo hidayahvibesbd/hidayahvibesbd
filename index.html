@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="bn">
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidayah Vibes BD - ইসলামিক জ্ঞান ও নির্দেশনা</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container header-container">
+            <div class="logo-container">
+                <img src="logo.png" alt="Hidayah Vibes BD Logo" class="logo">
+                <h1 class="site-title">Hidayah Vibes BD</h1>
+            </div>
+            
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" class="search-bar" placeholder="খুঁজুন (কুরআন, হাদিস, লেখা...)">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <div class="container nav-container">
+            <ul class="nav-menu">
+                <li><a href="#home" class="active"><i class="fas fa-home"></i> হোম</a></li>
+                <li><a href="#quran"><i class="fas fa-book-quran"></i> কোরআন</a></li>
+                <li><a href="#hadith"><i class="fas fa-book-open"></i> হাদিস</a></li>
+                <li><a href="#articles"><i class="fas fa-pen-nib"></i> ইসলামিক লেখা</a></li>
+                <li><a href="#videos"><i class="fas fa-video"></i> ভিডিও</a></li>
+                <li><a href="#about"><i class="fas fa-info-circle"></i> সম্পর্কে</a></li>
+                <li><a href="#contact"><i class="fas fa-phone-alt"></i> যোগাযোগ</a></li><li><a href="/admin"><i class="fas fa-user-shield"></i> অ্যাডমিন</a></li>
+
+            </ul>
+            
+            <!-- Mobile Menu Toggle -->
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-star-and-crescent"></i> হোম</h2>
+                </div>
+                
+                <!-- Surah Fatiha -->
+                <div class="surah-fatiha card">
+                    <div class="card-header">
+                        <h3>সূরা আল-ফাতিহা</h3>
+                        <p class="arabic-title">سُورَةُ الْفَاتِحَةِ</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="arabic-text">
+                            <p>بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+                            <p>الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ</p>
+                            <p>الرَّحْمَٰنِ الرَّحِيمِ</p>
+                            <p>مَالِكِ يَوْمِ الدِّينِ</p>
+                            <p>إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ</p>
+                            <p>اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ</p>
+                            <p>صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ</p>
+                        </div>
+                        
+                        <div class="bangla-translation">
+                            <h4>বাংলা অনুবাদ:</h4>
+                            <p>১. শুরু করছি আল্লাহর নামে যিনি পরম করুণাময়, অতি দয়ালু।</p>
+                            <p>২. সমস্ত প্রশংসা আল্লাহ তাআলার যিনি সকল সৃষ্টি জগতের পালনকর্তা।</p>
+                            <p>৩. যিনি নিতান্ত মেহেরবান ও দয়ালু।</p>
+                            <p>৪. যিনি বিচার দিনের মালিক।</p>
+                            <p>৫. আমরা একমাত্র তুমারই ইবাদত করি এবং শুধুমাত্র তুমারই সাহায্য প্রার্থনা করি।</p>
+                            <p>৬. আমাদের সরল পথ দেখাও।</p>
+                            <p>৭. সে সমস্ত লোকের পথ, যাদেরকে তুমি নেয়ামত দান করেছ। তাদের পথ নয়, যাদের প্রতি তোমার গজব নাযিল হয়েছে এবং যারা পথভ্রষ্ট হয়েছে।</p>
+                        </div>
+                        
+                        <button class="read-more-btn" onclick="goToSection('quran')">
+                            আরো পড়ুন <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Featured Hadith -->
+                <div class="featured-hadith card">
+                    <div class="card-header">
+                        <h3>হাদিস শরীফ</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="hadith-text">
+                            <p class="arabic-text">"من سلك طريقا يلتمس فيه علما سهل الله له به طريقا إلى الجنة"</p>
+                            <p class="bangla-translation">"যে ব্যক্তি জ্ঞান অর্জনের জন্য কোনো পথ অতিক্রম করে, আল্লাহ তার জন্য জান্নাতের পথ সহজ করে দেন।"</p>
+                            <p class="hadith-reference">(সহীহ মুসলিম, হাদীস নং ২৬৯৯)</p>
+                        </div>
+                        
+                        <button class="read-more-btn" onclick="goToSection('hadith')">
+                            আরো পড়ুন <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Featured Article -->
+                <div class="featured-article card">
+                    <div class="card-header">
+                        <h3>ইসলামিক লেখা</h3>
+                    </div>
+                    <div class="card-body">
+                        <h4>তাকওয়া কি এবং কেন?</h4>
+                        <p>তাকওয়া আরবি শব্দ। এর শাব্দিক অর্থ ভয় করা, বেঁচে থাকা, সংযত থাকা। পরিভাষায় আল্লাহর ভয়ে তাঁর নাফরমানি থেকে বেঁচে থাকা এবং তাঁর আদেশ-নিষেধ মেনে চলার নাম তাকওয়া। তাকওয়া মুমিনের প্রধান অস্ত্র। তাকওয়ার মাধ্যমেই মানুষ আল্লাহর নৈকট্য অর্জন করতে পারে।</p>
+                        
+                        <button class="read-more-btn" onclick="goToSection('articles')">
+                            আরো পড়ুন <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Featured Video -->
+                <div class="featured-video card">
+                    <div class="card-header">
+                        <h3>ভিডিও</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="video-container">
+                            <div class="video-placeholder">
+                                <i class="fas fa-play-circle"></i>
+                                <p>ইসলামিক বক্তব্য - আল্লাহর উপর ভরসা</p>
+                            </div>
+                        </div>
+                        
+                        <button class="read-more-btn" onclick="goToSection('videos')">
+                            আরো দেখুন <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Comments Section -->
+                <div class="comments-section card">
+                    <div class="card-header">
+                        <h3>মন্তব্য</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="comment-form">
+                            <textarea id="commentInput" placeholder="আপনার মূল্যবান মন্তব্য লিখুন..."></textarea>
+                            <button onclick="addComment()" class="submit-btn">মন্তব্য প্রদান করুন</button>
+                        </div>
+                        
+                        <div class="comments-list">
+                            <h4>মন্তব্যসমূহ:</h4>
+                            <div id="commentsContainer">
+                                <!-- Comments will be loaded here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quran Section -->
+        <section id="quran" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-book-quran"></i> পবিত্র কুরআন</h2>
+                    <p>পবিত্র কুরআনের সকল সূরা বাংলা অনুবাদ সহ</p>
+                </div>
+                
+                <div class="surah-list" id="surahList">
+                    <!-- Surahs will be loaded here via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Hadith Section -->
+        <section id="hadith" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-book-open"></i> হাদিস শরীফ</h2>
+                    <p>রাসূল (সা.) এর বাণীসমূহ</p>
+                </div>
+                
+                <div class="hadith-list" id="hadithList">
+                    <!-- Hadiths will be loaded here via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Articles Section -->
+        <section id="articles" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-pen-nib"></i> ইসলামিক লেখা</h2>
+                    <p>বিশিষ্ট আলেমদের লেখা থেকে সংগ্রহ</p>
+                </div>
+                
+                <div class="articles-list" id="articlesList">
+                    <!-- Articles will be loaded here via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Videos Section -->
+        <section id="videos" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-video"></i> ইসলামিক ভিডিও</h2>
+                    <p>উপদেশমূলক বক্তব্য ও ইসলামিক আলোচনা</p>
+                </div>
+                
+                <div class="videos-list" id="videosList">
+                    <!-- Videos will be loaded here via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-info-circle"></i> সম্পর্কে</h2>
+                </div>
+                
+                <div class="about-content card">
+                    <div class="card-body">
+                        <h3>Hidayah Vibes BD সম্পর্কে</h3>
+                        <p>Hidayah Vibes BD একটি ইসলামিক শিক্ষামূলক প্লাটফর্ম যার লক্ষ্য সহজ ও সুন্দরভাবে ইসলামের শিক্ষা প্রচার করা। আমরা কুরআন, হাদিস, ইসলামিক লেখা ও ভিডিওর মাধ্যমে মানুষকে আল্লাহর পথে আহ্বান করি।</p>
+                        <p>আমাদের উদ্দেশ্য হল ইসলামের সঠিক ও সহজ বার্তা সবাইকে পৌঁছে দেওয়া এবং মানুষের ঈমানী চেতনাকে জাগ্রত করা।</p>
+                        
+                        <h4>আমাদের লক্ষ্য:</h4>
+                        <ul>
+                            <li>কুরআন ও হাদিসের সহজ ব্যাখ্যা প্রদান</li>
+                            <li>ইসলামিক জ্ঞান বিস্তারে ভূমিকা রাখা</li>
+                            <li>তরুণ প্রজন্মকে ইসলামের সুন্দর শিক্ষার সাথে পরিচয় করিয়ে দেওয়া</li>
+                            <li>সঠিক ইসলামিক তথ্য সহজলভ্য করা</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-phone-alt"></i> যোগাযোগ</h2>
+                </div>
+                
+                <div class="contact-container">
+                    <div class="contact-info card">
+                        <div class="card-body">
+                            <h3>যোগাযোগ তথ্য</h3>
+                            <p><i class="fas fa-envelope"></i> ইমেইল: syednurulabsar7@gmail.com</p>
+                            <p><i class="fab fa-whatsapp"></i> WhatsApp: 01955379242</p>
+                            
+                            <h4>সামাজিক যোগাযোগ মাধ্যম:</h4>
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/share/1HNC2EvhPL/" target="_blank" class="social-btn facebook">
+                                    <i class="fab fa-facebook-f"></i> Facebook
+                                </a>
+                                <a href="https://youtube.com/@hidayahvibesbd?si=5PsbwW-9GQDECjmp" target="_blank" class="social-btn youtube">
+                                    <i class="fab fa-youtube"></i> YouTube
+                                </a>
+                                <a href="https://www.instagram.com/hidayahvibesbd" target="_blank" class="social-btn instagram">
+                                    <i class="fab fa-instagram"></i> Instagram
+                                </a>
+                                <a href="https://www.tiktok.com/@hidayahvibesbd" target="_blank" class="social-btn tiktok">
+                                    <i class="fab fa-tiktok"></i> TikTok
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form card">
+                        <div class="card-body">
+                            <h3>বার্তা পাঠান</h3>
+                            <form id="contactForm">
+                                <div class="form-group">
+                                    <input type="text" id="name" placeholder="আপনার নাম" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="email" placeholder="ইমেইল ঠিকানা" required>
+                                </div>
+                                <div class="form-group">
+                                    <textarea id="message" rows="5" placeholder="আপনার বার্তা" required></textarea>
+                                </div>
+                                <button type="submit" class="submit-btn">বার্তা পাঠান</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Hidayah Vibes BD Logo" class="footer-logo-img">
+                    <h3>Hidayah Vibes BD</h3>
+                    <p>ইসলামিক জ্ঞান ও নির্দেশনা</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>দ্রুত লিংক</h4>
+                    <ul>
+                        <li><a href="#home">হোম</a></li>
+                        <li><a href="#quran">কুরআন</a></li>
+                        <li><a href="#hadith">হাদিস</a></li>
+                        <li><a href="#articles">লেখা</a></li>
+                        <li><a href="#videos">ভিডিও</a></li>
+                        <li><a href="#about">সম্পর্কে</a></li>
+                        <li><a href="#contact">যোগাযোগ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>আমাদের অনুসরণ করুন</h4>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/share/1HNC2EvhPL/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://youtube.com/@hidayahvibesbd?si=5PsbwW-9GQDECjmp" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/hidayahvibesbd" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@hidayahvibesbd" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>২০২৬ © Hidayah Vibes BD কর্তৃক সর্বস্বত্ব সংরক্ষিত</p>
+                <p class="made-by">Made by Syed Nurul Absar</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+</body>
+</html>
