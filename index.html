@@ -1,350 +1,84 @@
 <!DOCTYPE html>
 <html lang="bn">
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hidayah Vibes BD - ইসলামিক জ্ঞান ও নির্দেশনা</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lateef:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
     <header>
         <div class="container header-container">
             <div class="logo-container">
-                <img src="logo.png" alt="Hidayah Vibes BD Logo" class="logo">
+                <img src="logo.png" alt="Hidayah Vibes BD" class="logo">
                 <h1 class="site-title">Hidayah Vibes BD</h1>
             </div>
             <div class="search-container">
-                <input type="text" class="search-bar" placeholder="খুঁজুন (কুরআন, হাদিস, লেখা...)">
+                <input type="text" id="searchInput" placeholder="কুরআন, হাদিস খুঁজুন...">
                 <button class="search-btn"><i class="fas fa-search"></i></button>
             </div>
         </div>
     </header>
 
     <nav>
-        <div class="container nav-container">
+        <div class="container">
             <ul class="nav-menu">
                 <li><a href="#home" class="active"><i class="fas fa-home"></i> হোম</a></li>
                 <li><a href="#quran"><i class="fas fa-book-quran"></i> কোরআন</a></li>
                 <li><a href="#hadith"><i class="fas fa-book-open"></i> হাদিস</a></li>
                 <li><a href="#articles"><i class="fas fa-pen-nib"></i> ইসলামিক লেখা</a></li>
                 <li><a href="#videos"><i class="fas fa-video"></i> ভিডিও</a></li>
-                <li><a href="#dua"><i class="fas fa-hands-praying"></i> দোয়া</a></li>
                 <li><a href="/admin"><i class="fas fa-user-shield"></i> অ্যাডমিন</a></li>
             </ul>
-            <div class="mobile-menu-toggle"><i class="fas fa-bars"></i></div>
         </div>
     </nav>
 
-    <main>
-        <!-- হোম সেকশন -->
+    <main class="container">
         <section id="home" class="section active">
-            <div class="container">
-                <div class="section-header">
-                    <h2><i class="fas fa-star-and-crescent"></i> সাম্প্রতিক পোস্টসমূহ</h2>
-                </div>
-                <div id="latest-posts-container" class="posts-grid">
-                    <!-- গিটহাব থেকে পোস্ট লোড হবে -->
-                </div>
-                
-                <!-- বৈশিষ্ট্যসমূহ -->
-                <div class="section-header" style="margin-top: 60px;">
-                    <h2><i class="fas fa-star"></i> আমাদের বৈশিষ্ট্যসমূহ</h2>
-                </div>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-book-quran"></i>
-                        </div>
-                        <h3>সম্পূর্ণ কুরআন</h3>
-                        <p>সূরা ফাতিহা থেকে নাস পর্যন্ত সম্পূর্ণ কুরআন শরীফ আরবি ও বাংলা অনুবাদসহ</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-book-open"></i>
-                        </div>
-                        <h3>সহিহ হাদিস</h3>
-                        <p>সহিহ বুখারী, মুসলিমসহ ৮টি প্রসিদ্ধ হাদিস গ্রন্থ</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-pen-nib"></i>
-                        </div>
-                        <h3>ইসলামিক লেখা</h3>
-                        <p>বিভিন্ন ইসলামিক বিষয়ে নির্ভরযোগ্য লেখা ও গবেষণা</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-hands-praying"></i>
-                        </div>
-                        <h3>দোয়া ও জিকির</h3>
-                        <p>প্রতিদিনের দোয়া, মাসনূন দোয়া ও জিকির</p>
-                    </div>
+            <div class="card surah-fatiha">
+                <div class="card-header"><h3>সূরা আল-ফাতিহা (سورة الفاتحة)</h3></div>
+                <div class="card-body">
+                    <p class="arabic-text">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+                    <p class="arabic-text">الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ ۝ الرَّحْمَٰنِ الرَّحِيمِ ۝ مَالِكِ يَوْمِ الدِّينِ ۝ إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ ۝ اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ ۝ صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ ۝</p>
+                    <hr>
+                    <p><strong>অনুবাদ:</strong> শুরু করছি আল্লাহর নামে যিনি পরম করুণাময়, অতি দয়ালু। সকল প্রশংসা আল্লাহর জন্য যিনি সকল জগতের পালনকর্তা। যিনি পরম করুণাময় ও দয়ালু। বিচার দিনের মালিক। আমরা একমাত্র তোমারই ইবাদত করি এবং একমাত্র তোমারই সাহায্য চাই। আমাদের সরল পথ দেখাও। তাদের পথ যাদের তুমি নেয়ামত দিয়েছ, তাদের পথ নয় যারা অভিশপ্ত ও পথভ্রষ্ট।</p>
                 </div>
             </div>
+            <div id="latestPosts" class="posts-grid"></div>
         </section>
 
-        <!-- কুরআন সেকশন -->
-        <section id="quran" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2><i class="fas fa-book-quran"></i> পবিত্র কুরআন মাজীদ</h2>
-                    <p>সূরা ফাতিহা থেকে সূরা নাস পর্যন্ত সম্পূর্ণ কুরআন শরীফ</p>
-                </div>
+        <section id="quran" class="section"><div id="quranList"></div></section>
+        <section id="hadith" class="section"><div id="hadithList"></div></section>
+        <section id="articles" class="section"><div id="articlesList"></div></section>
+        <section id="videos" class="section"><div id="videosList"></div></section>
 
-                <!-- কুরআন টুলবার -->
-                <div class="quran-toolbar">
-                    <div class="toolbar-left">
-                        <div class="search-box">
-                            <input type="text" id="surahSearch" placeholder="সূরা খুঁজুন...">
-                            <i class="fas fa-search"></i>
-                        </div>
-                    </div>
-                    <div class="toolbar-right">
-                        <button class="filter-btn active" data-filter="all">সব সূরা</button>
-                        <button class="filter-btn" data-filter="makki">মাক্কী সূরা</button>
-                        <button class="filter-btn" data-filter="madani">মাদানী সূরা</button>
-                    </div>
-                </div>
-
-                <!-- সূরার তালিকা -->
-                <div class="surah-grid" id="surahListContainer">
-                    <!-- সূরার তালিকা ডায়নামিকভাবে লোড হবে -->
-                </div>
-
-                <!-- কুরআন প্রদর্শন -->
-                <div id="quranDisplayContainer" style="display: none;">
-                    <!-- নির্বাচিত সূরার আয়াতগুলো দেখাবে -->
-                </div>
+        <section class="card">
+            <h3>মতামত দিন</h3>
+            <div class="comment-box">
+                <input type="text" id="commenterName" placeholder="আপনার নাম">
+                <textarea id="commentText" placeholder="আপনার মন্তব্য লিখুন..."></textarea>
+                <button onclick="saveComment()" class="submit-btn">মন্তব্য করুন</button>
             </div>
-        </section>
-
-        <!-- হাদিস সেকশন -->
-        <section id="hadith" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2><i class="fas fa-book-open"></i> হাদিস শরীফ</h2>
-                    <p>প্রসিদ্ধ সহিহ হাদিসের কিতাবসমূহ</p>
-                </div>
-
-                <!-- হাদিস বইয়ের গ্রিড -->
-                <div class="hadith-books-grid" id="hadithBooksContainer">
-                    <!-- হাদিস বইয়ের তালিকা ডায়নামিকভাবে লোড হবে -->
-                </div>
-
-                <!-- হাদিস প্রদর্শন -->
-                <div id="hadithDisplayContainer" style="display: none;">
-                    <!-- নির্বাচিত হাদিস বই ও হাদিস দেখাবে -->
-                </div>
-            </div>
-        </section>
-
-        <!-- ইসলামিক লেখা সেকশন -->
-        <section id="articles" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2><i class="fas fa-pen-nib"></i> ইসলামিক লেখা</h2>
-                    <p>বিভিন্ন ইসলামিক বিষয়ে নির্ভরযোগ্য লেখা</p>
-                </div>
-
-                <!-- ইসলামিক লেখার গ্রিড -->
-                <div class="articles-grid" id="articlesContainer">
-                    <!-- ইসলামিক লেখাগুলো ডায়নামিকভাবে লোড হবে -->
-                </div>
-            </div>
-        </section>
-
-        <!-- ভিডিও সেকশন -->
-        <section id="videos" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2><i class="fas fa-video"></i> ইসলামিক ভিডিও</h2>
-                    <p>ইসলামিক শিক্ষামূলক ভিডিও ও বক্তব্য</p>
-                </div>
-                <div id="videosList" class="videos-list">
-                    <!-- ভিডিও লোড হবে -->
-                    <div class="video-card">
-                        <div class="video-thumbnail">
-                            <i class="fas fa-play-circle"></i>
-                        </div>
-                        <div class="video-info">
-                            <h3>নামাযের গুরুত্ব ও ফজিলত</h3>
-                            <p>ড. জাকির নায়েক</p>
-                            <span class="video-duration">25:30</span>
-                        </div>
-                    </div>
-                    <div class="video-card">
-                        <div class="video-thumbnail">
-                            <i class="fas fa-play-circle"></i>
-                        </div>
-                        <div class="video-info">
-                            <h3>কুরআন তিলাওয়াতের ফজিলত</h3>
-                            <p>মুফতি মেনক</p>
-                            <span class="video-duration">18:45</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- দোয়া সেকশন -->
-        <section id="dua" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2><i class="fas fa-hands-praying"></i> দোয়া ও জিকির</h2>
-                    <p>প্রতিদিনের দোয়া, মাসনূন দোয়া ও জিকির</p>
-                </div>
-
-                <div class="dua-categories">
-                    <button class="dua-category active" data-category="daily">প্রতিদিনের দোয়া</button>
-                    <button class="dua-category" data-category="masnoon">মাসনূন দোয়া</button>
-                    <button class="dua-category" data-category="surah">কুরআনের সূরা</button>
-                    <button class="dua-category" data-category="zikr">জিকির</button>
-                </div>
-
-                <div class="duas-container" id="duasContainer">
-                    <!-- দোয়া গুলো ডায়নামিকভাবে লোড হবে -->
-                    <div class="dua-card">
-                        <div class="dua-arabic">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
-                        <div class="dua-translation">
-                            <h4>বাংলা অনুবাদ:</h4>
-                            <p>পরম করুণাময় অসীম দয়ালু আল্লাহর নামে</p>
-                        </div>
-                        <div class="dua-info">
-                            <span><i class="fas fa-clock"></i> প্রতিদিন পড়ুন</span>
-                            <span><i class="fas fa-star"></i> ফজিলত: সব কাজের শুরুতে</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- কমেন্ট সেকশন -->
-        <section id="comments" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2><i class="fas fa-comments"></i> মন্তব্য করুন</h2>
-                    <p>ওয়েবসাইট সম্পর্কে আপনার মূল্যবান মতামত দিন</p>
-                </div>
-
-                <div class="comment-section">
-                    <div class="comment-form">
-                        <div class="form-group">
-                            <input type="text" id="commentName" placeholder="আপনার নাম" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="commentEmail" placeholder="আপনার ইমেইল (ঐচ্ছিক)">
-                        </div>
-                        <div class="form-group">
-                            <textarea id="commentText" placeholder="আপনার মন্তব্য লিখুন..." rows="4" required></textarea>
-                        </div>
-                        <button onclick="submitComment()" class="submit-btn">
-                            <i class="fas fa-paper-plane"></i> মন্তব্য প্রকাশ করুন
-                        </button>
-                    </div>
-
-                    <div class="comments-list" id="commentsList">
-                        <div class="comment">
-                            <div class="comment-header">
-                                <span class="comment-author">মোহাম্মদ আলী</span>
-                                <span class="comment-date">২ দিন আগে</span>
-                            </div>
-                            <div class="comment-content">
-                                খুবই সুন্দর ওয়েবসাইট। ইসলামিক জ্ঞান অর্জনের জন্য অসাধারণ প্ল্যাটফর্ম।
-                            </div>
-                        </div>
-                        <div class="comment">
-                            <div class="comment-header">
-                                <span class="comment-author">আয়েশা খাতুন</span>
-                                <span class="comment-date">১ সপ্তাহ আগে</span>
-                            </div>
-                            <div class="comment-content">
-                                কুরআন ও হাদিস পড়ার সুযোগ পাওয়ায় আল্লাহ আপনাদের উত্তম প্রতিদান দান করুন।
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div id="displayComments"></div>
         </section>
     </main>
 
     <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>যোগাযোগ</h3>
-                <ul class="contact-info">
-                    <li>
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>ইমেইল</h4>
-                            <p>syednurulabsar7@gmail.com</p>
-                        </div>
-                    </li>
-                    <li>
-                        <i class="fab fa-whatsapp"></i>
-                        <div>
-                            <h4>হোয়াটসঅ্যাপ</h4>
-                            <p>০১৯৫৫৩৭৯২৪২</p>
-                        </div>
-                    </li>
-                    <li>
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>ঠিকানা</h4>
-                            <p>ঢাকা, বাংলাদেশ</p>
-                        </div>
-                    </li>
-                </ul>
+        <div class="container footer-content">
+            <div class="social-links">
+                <a href="https://www.facebook.com/share/1AEzNWvrKh/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://youtube.com/@hidayahvibesbd?si=VTvVIori3xIXS82y" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://tiktok.com/@hidayahvibesbd" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/hidayahvibesbd/" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
-            
-            <div class="footer-section">
-                <h3>সামাজিক যোগাযোগ</h3>
-                <div class="social-links">
-                    <a href="https://www.facebook.com/share/1DdDw8Af3V/" target="_blank" class="social-icon facebook">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="https://www.instagram.com/https%3A%2F%2Fwww.instagram.com%2Fhidayahvibesbd%3Figsh%3DZnE2Y2lkdXMxcmMw" target="_blank" class="social-icon instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://www.tiktok.com/@hidayahvibesbd?_r=1&_t=ZS-93B3zt2eCbk" target="_blank" class="social-icon tiktok">
-                        <i class="fab fa-tiktok"></i>
-                    </a>
-                    <a href="https://youtube.com/@hidayahvibesbd?si=IIdFEDRA6tzDPm2u" target="_blank" class="social-icon youtube">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                    <a href="https://wa.me/8801955379242" target="_blank" class="social-icon whatsapp">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                </div>
-            </div>
-            
-            <div class="footer-section">
-                <h3>দ্রুত লিংক</h3>
-                <ul class="quick-links">
-                    <li><a href="#home"><i class="fas fa-home"></i> হোম</a></li>
-                    <li><a href="#quran"><i class="fas fa-book-quran"></i> কুরআন</a></li>
-                    <li><a href="#hadith"><i class="fas fa-book-open"></i> হাদিস</a></li>
-                    <li><a href="#articles"><i class="fas fa-pen-nib"></i> ইসলামিক লেখা</a></li>
-                    <li><a href="#dua"><i class="fas fa-hands-praying"></i> দোয়া</a></li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="copyright">
-            <p>২০২৬ © Hidayah Vibes BD কর্তৃক সর্বস্বত্ব সংরক্ষিত</p>
-            <p>Made By Syed Nurul Absar</p>
+            <p>© ২০২৬ Hidayah Vibes BD | সায়্যিদ নুরুল আবসার</p>
         </div>
     </footer>
 
-    <!-- ব্যাক টু টপ বাটন -->
-    <button class="back-to-top" id="backToTop">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
     <script src="script.js"></script>
 </body>
-                                          </html>
+    </html>
+                
